@@ -21,7 +21,7 @@ export const portfolioData = {
         summary: `Adebola Oyenuga is a Senior Software Engineer with over 5 years of professional experience. He holds a BSc in Computer Science and an MSc in Systems Engineering with a focus on Robotics and Artificial Intelligence. Adebola specializes in building scalable solutions, including Buy Now Pay Later (BNPL) applications, identity verification systems, and data marketplaces.`,
         coreStack: {
             languages: ["JavaScript (React, NodeJS, Vue)", "Python (Django)", "Dart (Flutter)", "PHP"],
-            designTools: ["UI Design (Figma)", "Graphic Design (Adobe Illustrator)", "Agile Development (JIRA)"],
+            designTools: ["UI Design (Figma)", "Graphic Design (Adobe Illustrator)"],
             expertise: ["Leading technical teams", "Developing NPM packages", "Creating technical visions"]
         },
         contact: {
@@ -50,7 +50,7 @@ export const portfolioData = {
         {
             id: "invvoices",
             name: "Invvoices",
-            url: "https://invoicify-blue.vercel.app",
+            url: "https://invoice.moderrator.com",
             type: "Invoicing Platform",
             description: "A comprehensive invoicing and financial tracking platform.",
             image: "/invvoices.png",
@@ -63,7 +63,7 @@ export const portfolioData = {
         {
             id: "wordnownow",
             name: "WordNowNow",
-            url: "https://bible-memory-eight.vercel.app",
+            url: "https://word.moderrator.com",
             type: "Scripture Index",
             description: "An easy-to-use index of Bible text categorized by emotional and seasonal needs.",
             image: "/wordnownow.png",

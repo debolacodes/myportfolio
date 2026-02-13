@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             className="section"
             style={{
                 borderRadius: '16px',
-                background: 'var(--color-bg)',
+                background: '#ffffff',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
                 marginBottom: '4rem',
                 border: '1px solid var(--color-border)',
@@ -53,7 +53,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                     justifyContent: 'space-between',
                     alignItems: 'baseline',
                     flexWrap: 'wrap',
-                    marginBottom: '1rem'
+                    marginBottom: '1rem',
                 }}>
                     <h3 style={{ fontSize: '1.5rem', margin: 0, fontWeight: 700 }}>
                         {project.url ? (
@@ -65,7 +65,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             project.name
                         )}
                     </h3>
-                    <span style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 500 }}>
+                    <span style={{ fontSize: '0.9rem', color: '#222', fontWeight: 500 }}>
                         {project.launchYear || project.tenure}
                     </span>
                 </div>
@@ -74,14 +74,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                     {project.type} {project.role && ` • ${project.role}`}
                 </div>
 
-                <p style={{ marginBottom: '1.5rem', lineHeight: '1.7', color: 'var(--color-text-secondary)' }}>
+                <p style={{ marginBottom: '1.5rem', lineHeight: '1.7', color: '#222' }}>
                     {project.description || project.coreImpact}
                 </p>
 
                 {project.keyFeatures && (
                     <div style={{ marginBottom: '1.5rem' }}>
-                        <h4 style={{ fontSize: '0.9rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-text-secondary)' }}>Key Features</h4>
-                        <ul style={{ paddingLeft: '1.2rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)', lineHeight: '1.6' }}>
+                        <h4 style={{ fontSize: '0.9rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222' }}>Key Features</h4>
+                        <ul style={{ paddingLeft: '1.2rem', fontSize: '0.95rem', color: '#222', lineHeight: '1.6' }}>
                             {project.keyFeatures.map((feature, i) => (
                                 <li key={i} style={{ marginBottom: '0.25rem' }}>{feature}</li>
                             ))}
@@ -90,9 +90,12 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 )}
 
                 {project.technicalDetails && (
-                    <div style={{ marginBottom: '1.5rem' }}>
-                        <h4 style={{ fontSize: '0.9rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-text-secondary)' }}>Technical Details</h4>
-                        <ul style={{ paddingLeft: '1.2rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)', lineHeight: '1.6' }}>
+                    <div style={{
+                        marginBottom: '1.5rem',
+                        padding: '1rem', borderRadius: '8px'
+                    }}>
+                        <h4 style={{ fontSize: '0.9rem', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222' }}>Technical Details</h4>
+                        <ul style={{ paddingLeft: '1.2rem', fontSize: '0.95rem', color: '#222', lineHeight: '1.6' }}>
                             {project.technicalDetails.map((detail, i) => (
                                 <li key={i} style={{ marginBottom: '0.25rem' }}>{detail}</li>
                             ))}

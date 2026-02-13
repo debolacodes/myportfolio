@@ -1,6 +1,6 @@
 :root {
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --color-bg: #FEFFD3;
+  --color-bg: #fffff3;
   --color-text: #1a1a1a;
   --color-text-secondary: #6D9E51;
   --color-accent: #A82323;
@@ -9,22 +9,7 @@
   --max-width: 800px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Keeping dark mode as is or adjusting slightly? 
-       User requested "light mode" specifically with these colors. 
-       I will leave dark mode overrides but the user might be checking in light mode.
-       If they want these specific colors, they might want them to override dark mode preference 
-       or just be the default "light" theme. 
-       I'll leave dark mode for now but ensure the light mode defaults (above) are correct.
-    */
-    --color-bg: #0a0a0a;
-    --color-text: #f0f0f0;
-    --color-text-secondary: #a0a0a0;
-    --color-accent: #fff;
-    --color-border: #333;
-  }
-}
+/* Dark mode overrides removed to enforce requested light theme */
 
 * {
   box-sizing: border-box;
@@ -52,7 +37,12 @@ a:hover {
   border-bottom-color: var(--color-accent);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -99,21 +89,35 @@ button:hover {
 }
 
 /* Stagger animations */
-.section:nth-child(1) { animation-delay: 0.1s; }
-.section:nth-child(2) { animation-delay: 0.2s; }
-.section:nth-child(3) { animation-delay: 0.3s; }
-.section:nth-child(4) { animation-delay: 0.4s; }
+.section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.section:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border); 
+  background: var(--color-border);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-secondary); 
+  background: var(--color-text-secondary);
 }
