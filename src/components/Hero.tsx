@@ -2,7 +2,7 @@ import { portfolioData } from '../data/portfolio';
 
 export const Hero = () => {
     // @ts-ignore
-    const { title, summary, coreStack, image } = portfolioData.personal;
+    const { summary, coreStack, image } = portfolioData.personal;
 
     return (
         <section className="section">
@@ -24,15 +24,7 @@ export const Hero = () => {
                     </div>
                 )}
                 <div style={{ flex: 1, minWidth: '300px' }}>
-                    <h2 style={{
-                        fontSize: '1rem',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                        color: 'var(--color-text-secondary)',
-                        marginBottom: '1rem'
-                    }}>
-                        {title}
-                    </h2>
+
                     <p style={{
                         fontSize: '1rem',
                         lineHeight: 1.5,
