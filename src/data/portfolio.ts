@@ -17,10 +17,10 @@ export interface Project {
 export const portfolioData = {
     personal: {
         name: "Adebola Oyenuga",
-        title: "Senior Software Engineer",
+        title: "Senior Software Engineer with over 5 years experience (React, VueJS, NodeJs, PythonDRF, HTML/CSS/TailwindCSS)",
         summary: `Adebola Oyenuga is a Senior Software Engineer with over 5 years of professional experience. He holds a BSc in Computer Science and an MSc in Systems Engineering with a focus on Robotics and Artificial Intelligence. Adebola specializes in building scalable solutions, including Buy Now Pay Later (BNPL) applications, identity verification systems, and data marketplaces.`,
         coreStack: {
-            languages: ["JavaScript (React, NodeJS, Vue)", "Python (Django)", "Dart (Flutter)", "PHP"],
+            languages: ["JavaScript (React, NodeJS, Vue)", "Python (Django)", "React Native", "PHP"],
             designTools: ["UI Design (Figma)", "Graphic Design (Adobe Illustrator)"],
             expertise: ["Leading technical teams", "Developing NPM packages", "Creating technical visions"]
         },

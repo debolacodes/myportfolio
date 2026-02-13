@@ -11,7 +11,10 @@ export const Header = () => {
             justifyContent: 'space-between',
             alignItems: 'baseline'
         }}>
-            <h1 style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0 }}>{name}</h1>
+            <div>
+                <h1 style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0 }}>{name}</h1>
+                <p style={{ fontSize: '1rem', fontWeight: 400, margin: 0 }}>{portfolioData.personal.title}</p>
+            </div>
             <nav>
                 <a href="#projects" style={{ marginRight: '1.5rem', fontSize: '0.9rem' }}>Work</a>
                 <a href="#contact" style={{ fontSize: '0.9rem' }}>Contact</a>

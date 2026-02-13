@@ -1,10 +1,10 @@
 :root {
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --color-bg: #fffff3;
+  --color-bg: #EAEFEF;
   --color-text: #1a1a1a;
-  --color-text-secondary: #6D9E51;
-  --color-accent: #A82323;
-  --color-border: #BCD9A2;
+  --color-text-secondary: #25343F;
+  --color-accent: #FF9B51;
+  --color-border: #BFC9D1;
   --spacing-unit: 1rem;
   --max-width: 800px;
 }

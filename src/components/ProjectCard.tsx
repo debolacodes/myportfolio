@@ -12,7 +12,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 borderRadius: '16px',
                 background: '#ffffff',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
-                marginBottom: '4rem',
+                marginBottom: '2rem',
                 border: '1px solid var(--color-border)',
                 overflow: 'hidden',
                 transition: 'transform 0.2s ease, box-shadow 0.2s ease',
