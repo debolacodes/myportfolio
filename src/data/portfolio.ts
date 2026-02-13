@@ -50,7 +50,7 @@ export const portfolioData = {
         {
             id: "invvoices",
             name: "Invvoices",
-            url: "https://invoice.moderrator.com",
+            url: "https://invoicify-blue.vercel.app/",
             type: "Invoicing Platform",
             description: "A comprehensive invoicing and financial tracking platform.",
             image: "/invvoices.png",
