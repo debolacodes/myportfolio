@@ -112,7 +112,6 @@ export const portfolioData = {
             keyFeatures: [
                 "Developed software solutions for onboarding farmers.",
                 "Defined the technical vision and direction for the organization.",
-                "Represented the company in pitches to partners and investors."
             ]
         },
         {
